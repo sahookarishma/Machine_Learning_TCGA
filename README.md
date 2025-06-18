@@ -103,3 +103,9 @@ Built using scikit-learn and TensorFlow:
     These results validate the effectiveness of preprocessing, class balancing using SMOTE, and robust feature selection using LASSO.
 
     The models are highly reliable for distinguishing tumor vs. normal samples in CRC.
+
+
+PUBLICATION:
+Sahoo K, Sundararajan V. IL-1β and associated molecules as prognostic biomarkers linked with immune cell infiltration in colorectal cancer: an integrated statistical and machine learning approach. Discov Oncol. 2025 Feb 28;16(1):252. doi: 10.1007/s12672-025-01989-3. PMID: 40019680; PMCID: PMC11871282.
+
+
