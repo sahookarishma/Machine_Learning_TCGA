@@ -55,3 +55,51 @@ Built using scikit-learn and TensorFlow:
         Custom architecture defined by dataset covariates and class labels.
 
         Trained using backpropagation and activation functions.
+
+📊 Results
+🔬 Transcriptomics Data (TCGA-CRC)
+
+| Class    | Model         | Precision | Recall | F1-score | Support |
+| -------- | ------------- | --------- | ------ | -------- | ------- |
+| Normal   | Random Forest | 1.00      | 1.00   | 1.00     | 135     |
+| Tumor    | Random Forest | 1.00      | 1.00   | 1.00     | 124     |
+| Accuracy | Random Forest | -         | -      | **1.00** | 259     |
+|          |               |           |        |          |         |
+| Normal   | KNN           | 0.99      | 1.00   | 1.00     | 135     |
+| Tumor    | KNN           | 1.00      | 0.99   | 1.00     | 124     |
+| Accuracy | KNN           | -         | -      | **1.00** | 259     |
+
+
+🧬 DNA Methylation Data – Illumina 450K
+| Class    | Model         | Precision | Recall | F1-score | Support |
+| -------- | ------------- | --------- | ------ | -------- | ------- |
+| Normal   | Random Forest | 1.00      | 1.00   | 1.00     | 81      |
+| Tumor    | Random Forest | 1.00      | 1.00   | 1.00     | 83      |
+| Accuracy | Random Forest | -         | -      | **1.00** | 164     |
+|          |               |           |        |          |         |
+| Normal   | KNN           | 0.99      | 1.00   | 0.99     | 81      |
+| Tumor    | KNN           | 1.00      | 0.99   | 0.99     | 83      |
+| Accuracy | KNN           | -         | -      | **0.99** | 164     |
+
+
+🧬 DNA Methylation Data – Illumina 27K
+| Class    | Model         | Precision | Recall | F1-score | Support |
+| -------- | ------------- | --------- | ------ | -------- | ------- |
+| Normal   | Random Forest | 1.00      | 1.00   | 1.00     | 68      |
+| Tumor    | Random Forest | 1.00      | 1.00   | 1.00     | 65      |
+| Accuracy | Random Forest | -         | -      | **1.00** | 133     |
+|          |               |           |        |          |         |
+| Normal   | KNN           | 1.00      | 1.00   | 1.00     | 68      |
+| Tumor    | KNN           | 1.00      | 1.00   | 1.00     | 65      |
+| Accuracy | KNN           | -         | -      | **1.00** | 133     |
+
+
+🧠 Key Takeaways
+
+    Random Forest consistently achieved 100% accuracy across all datasets.
+
+    KNN also performed extremely well with accuracy between 99% and 100%.
+
+    These results validate the effectiveness of preprocessing, class balancing using SMOTE, and robust feature selection using LASSO.
+
+    The models are highly reliable for distinguishing tumor vs. normal samples in CRC.
